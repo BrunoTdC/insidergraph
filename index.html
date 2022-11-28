@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site - Insidergraph</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Link Fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onresize="ajustasite()">
+    <nav>
+       <div id="menu" class="menu">
+        <a class="logoContainer" href="index.html">Insidergraph</a>
+            <div class="menu-bars">
+                <button onclick="navbar()"><i class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+            <div id="menu_navbar" class="menu-int">
+                <li class="item-menu"><a class="link-menu" href="">Inicio</a></li>
+                <li class="item-menu"><a class="link-menu" href="">Empresa</a></li>
+                <li class="item-menu"><a class="link-menu" href="">Produtos</a></li>
+                <li class="item-menu"><a class="link-menu" href="">Certificação</a></li>
+                <li class="item-menu"><a class="link-menu" href="">Matéria Prima</a></li>
+                <li class="item-menu line"><a class="link-menu" href="">Orçamento</a></li>
+                <li class="item-menu margem"><a class="link-menu contato" href="">Contato</a></li>
+            </div>  
+        </div>
+    </nav>
+    <header>
+        <div class="container_principal">
+            <div class="container_titulo">
+                <h1 class="titulo_principal">A Gráfica que vesete seu produto com qualidade!</h1>
+                <p class="paragrafo_principal">especializada em rótulos e etiquetas adesivas</p>
+                <button class="btn">Saiba mais</button>
+            </div>
+            <div id="container_titulo_2" class="container_titulo_2">
+                <div class="container_interno" id="container_interno">
+                    <img src="./img/agua.png" alt="">
+                  
+                    <img src="./img/suplemento.png" alt="">
+               
+                    <img src="./img/pote.png" alt="">
+             
+                    <img src="./img/queijo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="carrosel_container">
+            <button class="contrl indicador_1"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="carrosel_card">
+                <div class="card">
+                    <img src="./img/banner_1.jpg" alt="">
+                </div>
+            </div>
+            <div class="carrosel_card">
+                <div class="card card_active">
+                    <img src="./img/banner_2.jpg" alt="">
+                </div>
+            </div>
+            <div class="carrosel_card">
+                <div class="card">
+                    <img src="./img/banner_3.jpg" alt="">
+                </div>
+            </div>
+            <div class="carrosel_card">
+                <div class="card ">
+                    <img src="./img/banner_4.jpg" alt="">
+                </div>
+            </div>
+            <div class="carrosel_card">
+                <div class="card ">
+                    <img src="./img/banner_5.jpg" alt="">
+                </div>
+            </div>
+            <div class="carrosel_card">
+                <div class="card">
+                    <img src="./img/banner_6.jpg" alt="">
+                </div>
+            </div>
+            <div class="carrosel_card">
+                <div class="card">
+                    <img src="./img/banner_7.jpg" alt="">
+                </div>
+            </div>
+            <button class="contrl indicador_2"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </header>
+    <main id="conteudo_principal">
+        <div>
+            <h1 class="main_titulo">Produtos</h1>
+
+            <div class="conteudo">
+                <div class="img_coneteudo"><img src="./img/galao.png" alt=""> <i class="fa-solid fa-arrow-right fa-2x"></i></div> 
+                    <div class="txt_1"> 
+                        <h3>Etiquetas Adesivas</h3>
+                        <p>
+                            Os Rótulos adesivos podem conter informações sobre 
+                            o produto, prazo de validade, instruções de uso, 
+                            indicação de armazenagem entre outros, agregando 
+                            valor ao produto. Para construir uma marca sólida 
+                            e duradoura no mercado, além de trabalhar com 
+                            papéis e materiais de excelente qualidade contamos
+                            com equipamentos de última geração. Firmamos um 
+                            parceria de longo prazo com sua empresa, oferecendo
+                            qualidade, pontualidade na entrega e condições 
+                            comerciais diferenciadas.
+                        </p>
+                        <button class="btn_conteudo">Saiba mais</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </main>
+   
+   <script src="navbar.js"></script>
+    <script src="corrosel.js"></script>
+</body>
+</html>
