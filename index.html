@@ -90,10 +90,10 @@
         <div>
             <h1 class="main_titulo">Produtos</h1>
 
-            <div class="conteudo">
+            <div class="conteudo" id="conteudo">
                 <div class="img_coneteudo"><img src="./img/galao.png" alt=""> <i class="fa-solid fa-arrow-right fa-2x"></i></div> 
-                    <div class="txt_1"> 
-                        <h3>Etiquetas Adesivas</h3>
+                    <div class="txt_1" id="txt_1"> 
+                        <h3>Rótulos Adesivos</h3>
                         <p>
                             Os Rótulos adesivos podem conter informações sobre 
                             o produto, prazo de validade, instruções de uso, 
@@ -106,8 +106,28 @@
                             qualidade, pontualidade na entrega e condições 
                             comerciais diferenciadas.
                         </p>
-                        <button class="btn_conteudo">Saiba mais</button>
-                    </div>    
+                        
+                    </div>  
+                    <input type="button" onclick="conteudo('0')" id="btn_conteudo" class="btn_conteudo" value="Mostrar mais"> 
+                </div>
+            </div>
+            <div class="conteudo" id="conteudo2">
+                <div class="img_coneteudo"><img src="./img/alimento.png" alt=""> <i class="fa-solid fa-arrow-right fa-2x"></i></div> 
+                    <div class="txt_1" id="txt_2"> 
+                        <h3>Etiquetas Adesivas</h3>
+                        <p>
+                            O uso de etiquetas adesivas é muito comum nos mais variados 
+                            segmentos. As etiquetas adesivas são utilizadas para 
+                            identificar qualquer produto, pode conter informações como 
+                            preços, código de barras, forma de armazenagem, validade entre
+                            outros. A Lukmar Etiquetas Adesivas oferece a seus clientes 
+                            materiais de excelente qualidade, aliados a pontualidade no 
+                            prazo de entrega e versatilidade de opções para suas 
+                            necessidades.
+                        </p>
+                        
+                    </div>  
+                    <input type="button" onclick="conteudo('1')" id="btn_conteudo2" class="btn_conteudo" value="Mostrar mais"> 
                 </div>
             </div>
         </div>

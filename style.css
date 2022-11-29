@@ -128,12 +128,12 @@ nav{
     position: relative;
     /*border: 2px solid red;*/
     width: 95%;
-    height: 350px;
     padding: 15px 0;
-    margin: 0px auto;
+    margin: 20px auto;
     display: flex;   
     overflow: hidden;  
     z-index: 10;
+    align-items: center;
 }
 .indicador_1{
     position:sticky;
@@ -177,8 +177,9 @@ nav{
     transition: all 0.7s ease;
 }
 .card{
+    /*border: 2px solid blue;*/
     width: 100%;
-    height: 100%;
+    height: 290px;
     border-radius: 15px; 
     opacity: 0.4;   
     overflow: hidden;
@@ -207,12 +208,19 @@ nav{
 }
 main .conteudo{
     /*border: 2px solid blue;*/
+    width: 90%;
     padding: 10px;
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.329);
-    margin: 30px;
+    margin: 30px auto;
     border-radius: 15px;
+    align-items: center;
+}
+main .conteudo:hover{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.692);
+    transition: 1s;
+    transform:scale(1.03);
 }
 main .txt_1{
     /*border: 2px solid green;*/
@@ -222,7 +230,7 @@ main .txt_1{
 main .txt_1 h3{
     color: rgba(9, 12, 14, 0.884);
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 30px;
     font-size: 25px;
 }
@@ -233,21 +241,26 @@ main .txt_1 p{
 }
 main .img_coneteudo{
     /*border: 2px solid red;*/
-    width: 40%;
-    height: 100%;
+    width: 30%;
+    height: 100% !important;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
 main .img_coneteudo i{
    color: rgba(9, 12, 14, 0.664);
+   padding: 20px;
 }
 main .img_coneteudo img{
     object-fit: contain;
-    width: 75%;
+    width: 50%;
+}
+.btn_conteudo{
+    display: none;
+
 }
 
-@media (max-width: 760px){
+@media (max-width: 775px){
     @keyframes transicao {
         from{
             opacity: 0;
@@ -256,9 +269,19 @@ main .img_coneteudo img{
             opacity: 1;
         }
     }
+.card{
+    width: 80%;
+    height: 230px;  
+}
+.titulo_principal{
+    font-size: 45px;
+}    
 main .txt_1{
+    /*border: 2px solid blue;*/
     margin: 0 auto;
     width: auto;
+    height: 79.5%;
+    overflow: hidden;
 }
 main .img_coneteudo img{
     object-fit: contain;
@@ -267,6 +290,8 @@ main .img_coneteudo img{
 main .img_coneteudo{
     display: grid;
     margin: 0 auto;
+    width: 170px;
+    height: 250px;
 }
 main .img_coneteudo i{
     /*border: 2px solid orangered;*/
@@ -276,10 +301,20 @@ main .img_coneteudo i{
 }
 main .conteudo{
     /*border: 2px solid blue;*/
-    padding: 10px;
     display: grid;
+    height: 570px;
 }
+.btn_conteudo{
+    width: 180px;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: none;
+    display: block;
 
+}
 .container_titulo{
     width: 100%;
 }
@@ -357,6 +392,7 @@ main .img_coneteudo img{
     width: 100%;
 }
 main .img_coneteudo{
+    border: 2px solid red;
     display: grid;
     margin: 0 auto;
 }
